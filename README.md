@@ -6,6 +6,7 @@ API projject with Slim FW
 - [slim fw](https://www.slimframework.com/)
 - [xampp](https://www.apachefriends.org/pt_br/index.html)
 - [illuminate database](https://github.com/illuminate/database)
+- [laravel](https://laravel.com/docs/11.x/readme)
 
 ## Iniciando projeto
 ![alt text](img/image.png)  

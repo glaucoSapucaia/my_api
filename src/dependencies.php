@@ -2,6 +2,9 @@
 
 use Slim\App;
 
+// illuminate
+use Illuminate\Database\Capsule\Manager as Capsule;
+
 return function (App $app) {
     $container = $app->getContainer();
 
@@ -19,4 +22,20 @@ return function (App $app) {
         $logger->pushHandler(new \Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
         return $logger;
     };
+
+    // DB
+    $container['db'] = function($c) {
+        $capsule = new Capsule;
+
+        // recuperando container DB de settings
+        $capsule->addConnection($c->get('settings')['db']);
+
+        $capsule->setAsGlobal();
+        $capsule->bootEloquent();
+
+        return $capsule;
+    };
+
+    // Retornando container para acesso via import
+    return $container;
 };
