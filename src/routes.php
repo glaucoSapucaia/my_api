@@ -4,6 +4,9 @@ use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+// Acessando pasta Routes
+require "routes/produtos.php";
+
 return function (App $app) {
     $container = $app->getContainer();
 
