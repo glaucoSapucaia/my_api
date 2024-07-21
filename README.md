@@ -1,5 +1,5 @@
 # my_api
-API projject with Slim FW
+API project with Slim FW
 
 ## Tools
 - [composer](https://getcomposer.org/)
@@ -22,3 +22,11 @@ Criando e populando tabelas
 
 ## Atualizando Dependencias
 ![alt text](img/image-3.png)
+
+## Postman
+- GET  
+![alt text](img/image-4.png)  
+- POST  
+Defina os campos válidos para recebimento de dados no Model  
+![alt text](img/image-5.png)  
+![alt text](img/image-6.png)  

@@ -31,7 +31,11 @@
         $table->text('descricao');
         $table->decimal('preco', 11, 2);
         $table->string('fabricante', 60);
-        $table->date('dt_criacao');
+
+        // $table->date('dt_criacao');
+        // Eloquent Model | ORM
+        // Preenchimento automatico de timestamps()
+        $table->timestamps();
     });
 
     // Alimentando tabela
@@ -41,7 +45,10 @@
             'descricao' => 'Android Oreo - 8.0 Tela 5.7" Octa-Core 1.8 Ghz 4G Câmera 12 + 5MP (Dual Trazeira - Índigo',
             'preco' => 899.00,
             'fabricante' => 'Motorola',
-            'dt_criacao' => '2019-10-22'
+            // 'dt_criacao' => '2019-10-22'
+
+            'created_at' => '2019-10-22',
+            'updated_at' => '2019-10-22',
         ]
     );
 
@@ -51,7 +58,10 @@
             'descricao' => 'Tela 5.8 IOS 12 4G Wi-Fi Câmera 12MP - Apple',
             'preco' => 4999.00,
             'fabricante' => 'Apple',
-            'dt_criacao' => '2020-01-10'
+            // 'dt_criacao' => '2020-01-10'
+
+            'created_at' => '2020-10-22',
+            'updated_at' => '2020-10-22',
         ]
     );
 

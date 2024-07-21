@@ -6,5 +6,8 @@
     use Illuminate\Database\Eloquent\Model;
 
     class Produto extends Model {
-        
+        // Definindo campos validos para recebimento de dados
+        protected $fillable = [
+            'titulo', 'descricao', 'preco', 'fabricante', 'created_at', 'updated_at',
+        ];
     }
