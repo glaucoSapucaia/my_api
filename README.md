@@ -15,3 +15,10 @@ Para versão mais recente, use a flag --prefer-dist
 
 ## Permissões de diretórios
 Garanta permissão total a pasta logs do app!
+
+## Database
+Criando e populando tabelas
+![alt text](img/image-2.png)
+
+## Atualizando Dependencias
+![alt text](img/image-3.png)
