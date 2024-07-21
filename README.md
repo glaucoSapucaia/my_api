@@ -30,3 +30,5 @@ Criando e populando tabelas
 Defina os campos válidos para recebimento de dados no Model  
 ![alt text](img/image-5.png)  
 ![alt text](img/image-6.png)  
+- PUT  
+![alt text](img/image-7.png)  
